@@ -42,5 +42,4 @@ export function Header(props) {
             <Linkedin onClick={() => window.open("https://www.linkedin.com/in/thomas-garcia-4b8016180/")}/>
         </div>
     </div>
-
 }
