@@ -10,17 +10,15 @@ export function Header(props) {
             </div>
         </div>
         <div className={"headline header-links"}>
-            <div>
+            <div className={"orange-hover"}>
                 SOUND VISUALIZER
             </div>
-            <div>
+            <div className={"orange-hover"}>
                 TERRAIN GENERATOR
             </div>
-            <div>
+            <div className={"orange-hover"}>
                 ADOBE XD
             </div>
         </div>
-
     </div>
-
 }
