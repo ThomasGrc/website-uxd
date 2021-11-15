@@ -4,10 +4,11 @@ import { Terminal } from './components/Terminal'
 import { Project } from './components/Project'
 
 function App() {
-  return (
-    <div className={"App headline"}>
-      <Header name={"THOMAS GARCIA"}></Header>
-      <div className={"main-container"}>
+
+    return (
+    <div className={"App headline d-flex justify-content-center"}>
+        <Header name={"THOMAS GARCIA"}></Header>
+      <div className={"d-flex flex-column main-container align-items-center col-sm-11 col-md-9 col-lg-8 col-xl-6"}>
         <Terminal></Terminal>
         <Project title={"SOUND VISUALIZER"}>
           <div style={{

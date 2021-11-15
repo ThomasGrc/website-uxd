@@ -2,6 +2,7 @@ import '../styles/Terminal.sass'
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
+import {Box} from "./Box";
 
 export function Terminal() {
 
@@ -29,18 +30,25 @@ export function Terminal() {
     }, [])
 
     return (
-    <div className={"terminal"}>
-        <div className={"terminal-buttons"}>
-            <div className={"terminal-button green"}></div>
-            <div className={"terminal-button yellow"}></div>
-            <div className={"terminal-button red"}></div>
+        <div className={"perspective"}>
+            <div className={"terminal"}>
+                <div className={"terminal-buttons"}>
+                    <div className={"terminal-button green"}></div>
+                    <div className={"terminal-button yellow"}></div>
+                    <div className={"terminal-button red"}></div>
+                </div>
+
+                <div className="eurostile">
+                    <span>{"$>"}</span>
+                    <span style={{ whiteSpace: 'pre', paddingLeft: '10px' }} ref={el} />
+                </div>
+
+            </div>
+            <div className={"td-container"}>
+                <Box />
+            </div>
         </div>
-        
-        <div className="eurostile">
-            <span>{"$>"}</span>
-            <span style={{ whiteSpace: 'pre', paddingLeft: '10px' }} ref={el} />
-        </div>
-    </div>
+
 );
 
 }

@@ -1,14 +1,10 @@
 @import './variables'
 
 .header
-    margin: 2%
-    display: flex
-    width: 100vw
     position: fixed
     color: $white
     font-size: 1.5rem
-    align-items: center
-    justify-content: space-between
+    z-index: 1000
 
 .square
     width: 1.5em
@@ -22,10 +18,16 @@
     width: 50%
 
 .header-links
-    display: flex
     width: fit-content
-    justify-content: space-between
-    align-items: center
-    width: 30vw
-    margin-right: 10%
-    
+
+.external-links
+    position: fixed
+    bottom: 10vh
+    left: 3.5vw
+
+.logo-container
+    width: 1.5em
+    height: 1.5em
+
+.header-background
+    background: $white

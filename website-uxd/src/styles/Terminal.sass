@@ -7,8 +7,12 @@
     justify-self: center
     min-width: 420px
     width: 60%
-    height: fit-content
+    height: 200px
     border: $light-grey 1px solid
+    transform-style: preserve-3d
+    transform: rotateY(40deg)
+    background: #403D39
+    box-shadow: #403D39 0px 1px 25px 5px
 
 .terminal-buttons
     display: flex
@@ -31,3 +35,6 @@
 
 .terminal-button.red
     background: $red
+
+.perspective
+    perspective: 40rem

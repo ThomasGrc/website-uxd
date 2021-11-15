@@ -2,7 +2,7 @@ import '../styles/Project.sass'
 
 export function Project(props) {
 
-    return <div className={"project cubano"}>
+    return <div className={"project eurostile"}>
         <div className={"project-header"}>
             <div style={{marginRight: '1%'}}>
                 {props.title ? props.title : "NO TITLE"}
