@@ -1,5 +1,5 @@
 import {Canvas} from "@react-three/fiber";
-import {OrbitControls, RoundedBox} from "@react-three/drei";
+import {OrbitControls, RoundedBox, Stars} from "@react-three/drei";
 import {Suspense} from "react";
 
 export function Box() {

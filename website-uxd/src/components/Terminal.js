@@ -44,7 +44,7 @@ export function Terminal() {
                 </div>
 
             </div>
-            <div className={"td-container"}>
+            <div className={"td-container col-6"}>
                 <Box />
             </div>
         </div>
