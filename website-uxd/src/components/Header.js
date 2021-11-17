@@ -6,7 +6,6 @@ import {useEffect, useState} from "react";
 
 export function Header(props) {
     const [backgroundClass, setBackgroundClass] = useState("")
-    const [phoneClass, setPhoneClass] = useState("")
     const [phoneHeader, setPhoneHeader] = useState(false)
 
     useEffect(() => {
@@ -27,6 +26,7 @@ export function Header(props) {
 
         return () => {
             window.removeEventListener('scroll', backgroundListener)
+            window.removeEventListener('resize', () => {console.log("resize")})
         }
 
     }, [])
@@ -42,8 +42,7 @@ export function Header(props) {
             </div>
         </div>
             {
-                phoneHeader ? <div className={"d-flex flex-column justify-content-around"}>
-                        <div className={"header-button"}></div>
+                phoneHeader ? <div className={"d-flex phone-header flex-column justify-content-around p-1 pb-2 pt-2"}>
                         <div className={"header-button"}></div>
                         <div className={"header-button"}></div>
                     </div>
@@ -63,6 +62,11 @@ export function Header(props) {
 
     </div>
         <div className={"external-links"}>
+            <div className={"d-flex align-items-end"}>
+                <div className={"line-links-large"} />
+                <div className={"line-links-medium ms-3"} />
+                <div className={"line-links-small"}/>
+            </div>
             <Github onClick={() => window.open("https://github.com/ThomasGrc/website-uxd")}/>
             <Linkedin onClick={() => window.open("https://www.linkedin.com/in/thomas-garcia-4b8016180/")}/>
         </div>
