@@ -3,6 +3,7 @@ import { Github } from '../icons/Github'
 import { Linkedin } from '../icons/Linkedin';
 import {Box} from "./Box";
 import {useEffect, useState} from "react";
+import {Mail} from "../icons/Mail";
 
 export function Header(props) {
     const [backgroundClass, setBackgroundClass] = useState("")
@@ -41,25 +42,17 @@ export function Header(props) {
                 {props.name ? props.name : "NO NAME"}
             </div>
         </div>
-            {
-                phoneHeader ? <div className={"d-flex phone-header flex-column justify-content-around p-1 pb-2 pt-2"}>
-                        <div className={"header-button"}></div>
-                        <div className={"header-button"}></div>
-                    </div>
-
-                    : <div className={"headline header-links d-flex "}>
-                    <div className={"clickable"}>
-                        SOUND VISUALIZER
-                    </div>
-                    <div className={"clickable"}>
-                        TERRAIN GENERATOR
-                    </div>
-                    <div className={"clickable"}>
-                        ADOBE XD
+        <div className={"headline header-links d-flex "}>
+                <div className={"pr-3 clickable"}>
+                    About me
+                </div>
+                    <div className={"contact-button eurostile pl-2 pr-2 d-flex  align-items-baseline"}>
+                        <div className={"pr-2"}>
+                            contact me
+                        </div>
+                        <Mail />
                     </div>
                 </div>
-            }
-
     </div>
         <div className={"external-links"}>
             <div className={"d-flex align-items-end"}>

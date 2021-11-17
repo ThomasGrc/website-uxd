@@ -5,7 +5,7 @@ export function Heading(props) {
     const degree = props.arc / characters.length;
     console.log(characters)
     return (
-        <div style={{display: "flex"}}>
+        <div style={{display: "flex", marginBottom: '-35%'}} className={"eurostile text-red"}>
             {characters.map((char, i) => (
                 <div
                     key={`span-${i}`}
