@@ -1,5 +1,5 @@
 import {Canvas, useFrame} from "@react-three/fiber";
-import { RoundedBox} from "@react-three/drei";
+import { RoundedBox, Ring, Torus} from "@react-three/drei";
 import {Suspense, useRef} from "react";
 
 const BoxElement = () => {
@@ -8,9 +8,12 @@ const BoxElement = () => {
     useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.005))
 
         return <mesh ref={mesh} position={[0, 0, 0]}>
-            <RoundedBox args={[1, 1, 1]} radius={0.05} smoothness={4} scale={3}>
-                <meshPhongMaterial attach="material" color="#fff" />
-            </RoundedBox>
+            {/* <RoundedBox args={[1, 1, 1]} radius={0.05} smoothness={4} scale={3}>
+                <meshPhongMaterial attach="material" wireframe color={"#ff3a3a"} />
+            </RoundedBox> */}
+            <Torus scale={1.5}>
+                <meshPhongMaterial attach={"material"} wireframe color={"#ff6c6c"}></meshPhongMaterial>
+            </Torus>
         </mesh>
 }
 

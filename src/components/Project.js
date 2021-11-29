@@ -1,5 +1,5 @@
 import '../styles/Project.sass'
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import AnimateHeight from "react-animate-height";
 
 export function Project(props) {
@@ -27,6 +27,7 @@ export function Project(props) {
             </AnimateHeight>
 
         </div>
+        {/* eslint-disable-next-line */}
         {height == 'auto' ?
             <div onClick={() => setHeight(100)} className={"read-more align-self-end headline p-1"}>
                 read less

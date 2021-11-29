@@ -4,17 +4,24 @@ import { Linkedin } from '../icons/Linkedin';
 import {Box} from "./Box";
 import {useEffect, useState} from "react";
 import {Mail} from "../icons/Mail";
+import Snackbar from '@mui/material/Snackbar';
+import {Alert} from "@mui/material";
 
 export function Header(props) {
     const [backgroundClass, setBackgroundClass] = useState("")
     const [phoneHeader, setPhoneHeader] = useState(false)
+    const [open, setOpen] = useState(false);
+
+    const handleClose = () => {
+        setOpen(false)
+    }
 
     useEffect(() => {
         if (window.innerWidth < 1100)
             setPhoneHeader(true)
         const backgroundListener = () => {
             if (window.scrollY > 100)
-                setBackgroundClass("header-background fade-in")
+                setBackgroundClass("header- fe-in")
             else
                 setBackgroundClass("fade-out")
             if (window.innerWidth < 1100)
@@ -34,7 +41,7 @@ export function Header(props) {
 
     return <>
         <div className={`header d-flex justify-content-around w-100 eurostile pt-3 pb-3  ${backgroundClass}`}>
-        <div className={"header-name"}>
+        <div className={"header-name col-4"}>
             <div className={"logo-container"}>
                 <Box />
             </div>
@@ -42,14 +49,28 @@ export function Header(props) {
                 {props.name ? props.name : "NO NAME"}
             </div>
         </div>
-        <div className={"headline header-links d-flex "}>
+        <div className={"headline col-6 justify-content-end header-links d-flex "}>
                 <div className={"pr-3 clickable"}>
                     About me
                 </div>
                     <div className={"contact-button eurostile pl-2 pr-2 d-flex  align-items-baseline"}>
-                        <div className={"pr-2"}>
+                        <div onClick={() => {
+                            navigator.clipboard.writeText("thomas.garcia@epitech.eu")
+                            setOpen(true)
+                        }} className={"pr-2"}>
                             contact me
                         </div>
+                        <Snackbar
+                            open={open}
+                            anchorOrigin={{vertical: 'top', horizontal: 'center'}}
+                            autoHideDuration={3000}
+                            onClose={handleClose}
+                            key={'bottom' + 'center'}
+                        >
+                            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                                Email copied to clipboard
+                            </Alert>
+                        </Snackbar>
                         <Mail />
                     </div>
                 </div>

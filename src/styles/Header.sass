@@ -2,14 +2,14 @@
 
 .header
     position: fixed
-    color: $white
+    color: $default
     font-size: 1.5rem
     z-index: 1000
 
 .square
     width: 1.5em
     height: 1.5em
-    background: $white
+    background: $default
 
 .header-name
     display: flex
@@ -29,21 +29,21 @@
 .line-links-small
     height: 60vh
     width: 2px
-    background: $white
+    background: $default
     margin-left: 10px
     transition: all 0.5s
 
 .line-links-medium
     height: 65vh
     width: 2px
-    background: $white
+    background: $default
     margin-left: 10px
     transition: all 0.5s
 
 .line-links-large
     height: 70vh
     width: 2px
-    background: $white
+    background: $default
     margin-left: 10px
     transition: all 0.5s
 
@@ -52,7 +52,7 @@
     height: 1.5em
 
 .header-background
-    background: $white
+    background: $default
     color: white
 
 .header-button
@@ -62,11 +62,20 @@
     border-radius: 2px
 
 .phone-header
-    background: $white
+    background: $default
 
 .contact-button
-    background: $white
-    border-radius: 15px
-    color: white
+    border-radius: 0px
+    color: $default
+    width: 110px
+    white-space: nowrap
     font-size: 20px
     cursor: pointer
+    background-color: white
+    transition: all 0.4s
+
+
+.contact-button:hover
+    width: 140px
+    color: white
+    background-color: $default
