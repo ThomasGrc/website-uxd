@@ -6,7 +6,7 @@ export function Project(props) {
 
     const [height, setHeight] = useState(100)
 
-    return <div className={"project eurostile w-100"}>
+    return <div className={"project eurostile w-100 pt-4 pb-4 p-2"}>
         <div className={"project-header"}>
             <div style={{marginRight: '1%'}}>
                 {props.title ? props.title : "NO TITLE"}
