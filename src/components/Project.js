@@ -6,13 +6,7 @@ export function Project(props) {
 
     const [height, setHeight] = useState(100)
 
-    return <div className={"project eurostile w-100 pt-4 pb-4 p-2"}>
-        <div className={"project-header"}>
-            <div style={{marginRight: '1%'}}>
-                {props.title ? props.title : "NO TITLE"}
-            </div>
-            <div className={"square"}></div>
-        </div>
+    return <div className={"project eurostile pb-4"}>
         <div>
             {props.children}
         </div>
@@ -21,6 +15,9 @@ export function Project(props) {
                 duration={ 500 }
                 height={ height }
             >
+                <div className={"eurostile m-3"}>
+                    TITLE
+                </div>
                 <div className={"m-3"}>
                     {props.content}
                 </div>

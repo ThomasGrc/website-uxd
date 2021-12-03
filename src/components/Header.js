@@ -21,7 +21,7 @@ export function Header(props) {
             setPhoneHeader(true)
         const backgroundListener = () => {
             if (window.scrollY > 100)
-                setBackgroundClass("header- fe-in")
+                setBackgroundClass("header- fe-in") //header-background fade-in
             else
                 setBackgroundClass("fade-out")
             if (window.innerWidth < 1100)
@@ -50,9 +50,9 @@ export function Header(props) {
             </div>
         </div>
         <div className={"headline col-6 justify-content-end header-links d-flex "}>
-                <div className={"pr-3 clickable"}>
+{/*                <div className={"pr-3 clickable"}>
                     About me
-                </div>
+                </div>*/}
                     <div className={"contact-button eurostile pl-2 pr-2 d-flex  align-items-baseline"}>
                         <div onClick={() => {
                             navigator.clipboard.writeText("thomas.garcia@epitech.eu")
@@ -60,19 +60,19 @@ export function Header(props) {
                         }} className={"pr-2"}>
                             contact me
                         </div>
-                        <Snackbar
-                            open={open}
-                            anchorOrigin={{vertical: 'top', horizontal: 'center'}}
-                            autoHideDuration={3000}
-                            onClose={handleClose}
-                            key={'bottom' + 'center'}
-                        >
-                            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                                Email copied to clipboard
-                            </Alert>
-                        </Snackbar>
                         <Mail />
                     </div>
+                    <Snackbar
+                        open={open}
+                        anchorOrigin={{vertical: 'top', horizontal: 'center'}}
+                        autoHideDuration={3000}
+                        onClose={handleClose}
+                        key={'bottom' + 'center'}
+                    >
+                        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                            Email copied to clipboard
+                        </Alert>
+                    </Snackbar>
                 </div>
     </div>
         <div className={"external-links"}>
