@@ -7,7 +7,7 @@ const InsideElement = () => {
     useFrame(() => (mesh.current.rotation.x -= 0.01, mesh.current.rotation.y += 0.01))
 
     return <mesh ref={mesh} position={[0, 0, 0]}>
-        <OrbitControls />
+        <OrbitControls enableZoom={false} />
         <Torus scale={0.5}>
             <meshPhongMaterial attach={"material"} color={"#ff6c6c"}></meshPhongMaterial>
         </Torus>
