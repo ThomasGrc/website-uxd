@@ -2,6 +2,10 @@ import '../styles/Project.sass'
 import React, {useState} from 'react'
 import AnimateHeight from "react-animate-height";
 import ScrollAnimation from "react-animate-on-scroll";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export function Project(props) {
     const [height, setHeight] = useState(100)
@@ -10,8 +14,22 @@ export function Project(props) {
             <div>
                 {props.children}
             </div>
-            <div className={"headline project-details mt-2"}>
-                <AnimateHeight
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <div className={"eurostile default-color"}>Accordion 1</div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div className={"default-color headline"}>
+                            {props.content ? props.content : "no content to display"}
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+
+                {/*                <AnimateHeight
                     duration={ 500 }
                     height={ height }
                 >
@@ -20,19 +38,17 @@ export function Project(props) {
                     </div>
                     <div className={"m-3"}>
                         {props.content}
+                        {height == 'fit-content' ?
+                            <span onClick={() => setHeight(100)}>
+                                read less
+                            </span> : <span onClick={() => setHeight('fit-content')}>
+                                read more
+                            </span>
+
+                        }
                     </div>
-                </AnimateHeight>
+                </AnimateHeight>*/}
 
-            </div>
-            {/* eslint-disable-next-line */}
-            {height == 'fit-content' ?
-                <div onClick={() => setHeight(100)} className={"read-more align-self-end headline p-1"}>
-                    read less
-                </div> : <div onClick={() => setHeight('fit-content')} className={"read-more align-self-end headline p-1"}>
-                    read more
-                </div>
-
-            }
     </ScrollAnimation>
 
 }

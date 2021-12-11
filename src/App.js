@@ -71,7 +71,7 @@ function App() {
     </div>
             <div id={"endPage"} className={"w-100 d-flex flex-column align-items-center"} >
                     <Arrow direction={"up"} onClick={() => scrollToTop()} />
-                    <div className={"eurostile text-red mb-5"}>Back to top</div>
+                    <div className={"eurostile text-red mb-4"}>Back to top</div>
             </div>
         </>
 );
