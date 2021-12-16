@@ -10,11 +10,17 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export function Project(props) {
     const [height, setHeight] = useState(100)
 
-    return <ScrollAnimation animateIn={"fadeInUp"} animateOut={"fadeOut"} duration={0.4 + props.delay ? props.delay : 0.} className={"project eurostile pb-4"}>
-            <div>
-                {props.children}
+    return <ScrollAnimation animateIn={"fadeInUp"} animateOut={"fadeOut"} duration={0.4 + props.delay ? props.delay : 0.} className={"project mb-5 eurostile"}>
+            <div className={"d-flex"}>
+                <div className={"col-5 p-0"}>
+                    {props.children}
+                </div>
+                <div className={"col-7"}>
+                    <div className={"title-project"}>TITLE</div>
+                    {props.content}
+                </div>
             </div>
-                <Accordion>
+               {/* <Accordion classes={"accordion"} disableGutters={true} >
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
@@ -27,28 +33,7 @@ export function Project(props) {
                             {props.content ? props.content : "no content to display"}
                         </div>
                     </AccordionDetails>
-                </Accordion>
-
-                {/*                <AnimateHeight
-                    duration={ 500 }
-                    height={ height }
-                >
-                    <div className={"eurostile m-3"}>
-                        TITLE
-                    </div>
-                    <div className={"m-3"}>
-                        {props.content}
-                        {height == 'fit-content' ?
-                            <span onClick={() => setHeight(100)}>
-                                read less
-                            </span> : <span onClick={() => setHeight('fit-content')}>
-                                read more
-                            </span>
-
-                        }
-                    </div>
-                </AnimateHeight>*/}
-
+                </Accordion>*/}
     </ScrollAnimation>
 
 }

@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57ac1e6-8591-4137-9f1f-f78e09cdd4ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.90065266.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.90065266.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.14ef1a47.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.14ef1a47.chunk.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.14ef1a47.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/3.7ba8368e.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/3.7ba8368e.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.6b52a35d.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.6b52a35d.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.feec11b4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.feec11b4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/c.bbbbbabc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/cpp.b16266e0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/three.69ae7c5c.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/Project.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Project.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +72,8 @@
       <workItem from="1638901217375" duration="42000" />
       <workItem from="1638986136994" duration="1390000" />
       <workItem from="1639137906949" duration="2507000" />
+      <workItem from="1639587729024" duration="31000" />
+      <workItem from="1639614587416" duration="2941000" />
     </task>
     <servers />
   </component>
@@ -110,6 +90,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
