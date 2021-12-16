@@ -20,20 +20,6 @@ export function Project(props) {
                     {props.content}
                 </div>
             </div>
-               {/* <Accordion classes={"accordion"} disableGutters={true} >
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <div className={"eurostile default-color"}>Accordion 1</div>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <div className={"default-color headline"}>
-                            {props.content ? props.content : "no content to display"}
-                        </div>
-                    </AccordionDetails>
-                </Accordion>*/}
     </ScrollAnimation>
 
 }
