@@ -1,5 +1,5 @@
 import {Canvas, useFrame} from "@react-three/fiber";
-import {RoundedBox, Ring, Torus, Text, OrbitControls} from "@react-three/drei";
+import {Torus, OrbitControls} from "@react-three/drei";
 import {Suspense, useRef} from "react";
 
 const InsideElement = () => {
