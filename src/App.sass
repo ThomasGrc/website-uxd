@@ -5,12 +5,14 @@ html
 
 .project-section
   background: #3a3a3a
+  z-index: 100
 
 .wave
   margin-top: -5%
 
 .main-container
   margin-top: 10%
+  z-index: -1
 
 .td-container
   position: relative
@@ -23,6 +25,8 @@ html
   width: 30vw
   height: 30vw
 
+.cursor-pointer
+  cursor: pointer
 
 .cubano
   font-family: cubano, sans-serif
@@ -44,6 +48,15 @@ html
   cursor: pointer
   margin-left: 10px
   margin-right: 10px
+
+.clickable a
+  font-weight: bolder
+  text-decoration: none
+  color: $default
+  transition: all 0.4s
+
+.clickable a:hover
+  color: $hover
 
 .clickable:hover
   color: $hover
@@ -79,21 +92,25 @@ html
     opacity: 1
 
 .design-statement-container
+  z-index: 200
   background: linear-gradient(0deg, rgba(149,0,0,1) 0%, rgba(199,15,15,1) 69%, rgba(214,26,26,1) 100%)
+
+#topPage
+  z-index: -100
 
 .design-statement-container > div
   color: white
-  font-size: 35px
+  font-size: 30px
   padding-left: 20%
   padding-right: 20%
 
 .design-statement
   height: 80%
+  padding-top: 5%
   display: flex
   flex-direction: column
   align-content: center
   justify-content: space-around
-
 
 .design-statement > div
   margin-bottom: 5vh
