@@ -26,7 +26,7 @@ function App() {
     }
 
     return (<>
-            <div id={"topPage"} className={"headline full-height d-flex flex-column align-items-center"}>
+            <div id={"topPage"} className={`headline full-height d-flex flex-column align-items-center`}>
                 <Header name={"THOMAS GARCIA"} onClick={() => scrollToTop()}></Header>
                 <div
                     className={"d-flex position-fixed flex-column main-container align-items-center col-sm-11 col-md-9 col-lg-11 col-xl-6"}>
@@ -43,13 +43,13 @@ function App() {
             <Wave fill='#d61a1a'
                   paused={false}
                   options={{
-                      height: 50,
-                      amplitude: 50,
+                      height: 25,
+                      amplitude: 25,
                       speed: 0.2,
                       points: 4
                   }}
             />
-            <div id={"designStatement"} className={"full-height design-statement-container eurostile"}>
+            <div id={"designStatement"} className={"design-statement-container eurostile pb-5"}>
                 <div className={"design-statement"}>
                     <div>
                         <ScrollAnimation animateIn={"fadeInRight"}>
@@ -73,12 +73,12 @@ function App() {
                     </div>
                 </div>
             </div>
-            <Wave fill='#3a3a3a'
+            <Wave fill='#fff'
                   className={"wave"}
                   paused={false}
                   options={{
-                      height: 20,
-                      amplitude: 20,
+                      height: 25,
+                      amplitude: 25,
                       speed: 0.2,
                       points: 4
                   }}
@@ -86,7 +86,7 @@ function App() {
             <div className={"w-100 project-section d-flex flex-column align-items-center pt-5"}>
                 <div className={"justify-content-center w-75 pt-5"}>
                     <Slider {...carouselSettings}>
-                        <Project delay={0.5} title={"SOUND VISUALIZER"}
+                        <Project delay={0.5} title={"ARCADE"}
                                  content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
                             <div className={"m-1"} style={{
                                 width: '100%',
@@ -106,7 +106,7 @@ function App() {
                             }}>
                             </div>
                         </Project>
-                        <Project delay={0.5} title={"SOUND VISUALIZER"}
+                        <Project delay={0.5} title={"BYNO"}
                                  content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}>
                             <div className={"m-1"} style={{
                                 width: '100%',
@@ -118,14 +118,11 @@ function App() {
                         </Project>
                     </Slider>
                 </div>
-
                 <div id={"endPage"} className={"w-100 d-flex flex-column align-items-center"}>
                     <Arrow direction={"up"} onClick={() => scrollToTop()}/>
                     <div className={"eurostile text-red mb-4"}>Back to top</div>
                 </div>
             </div>
-
-
         </>
     );
 }
